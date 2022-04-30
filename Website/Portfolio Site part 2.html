@@ -1,0 +1,391 @@
+<html>
+
+<head>
+  <title>Simon Christianson Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+    #img2 {
+  border: 5px solid rgb(255, 255, 255);
+}
+@media screen and (max-width: 601px) { 
+
+.column4 {
+    display:none;
+    float: left;
+      width: 50%;
+
+      padding: 5vw;
+      word-spacing: 3px;
+      font-size: 1.5vw;
+}
+
+}
+    .column {
+      float: left;
+      width: 50%;
+
+      padding: 5vw;
+      word-spacing: 3px;
+      font-size: 1.5vw;
+    }
+
+    #img1 {
+      width: 100%;
+      height: 40vw;
+      object-fit: cover;
+
+    }
+
+    .columntwo {
+      float: left;
+      width: 50%;
+
+      padding: 3vw;
+      word-spacing: 3px;
+      font-size: 1.75vw;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+    .bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+.h11{
+  font-size:5vw
+}
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+      width: 120px;
+      background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0
+      }
+    }
+    .mySlides {display:none;}
+    b:link, b:visited {
+  background-color: #f7f7f7;
+  color: rgb(0, 0, 0);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+b:hover, b:active {
+  background-color: rgb(209, 209, 209);
+}
+  </style>
+</head>
+
+<body class="w3-black">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="#mywork" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-folder-open w3-xxlarge"></i>
+      <p>MY Work</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about1" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#mywork" class="w3-bar-item w3-button" style="width:25% !important">MY WORK</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
+  </div>
+
+  <!--Content On Page-->
+  <div class="w3-padding-large" id="main">
+    <!-- Home Section -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 class="w3-jumbo">Simon Christianson</h1>
+      <p class="w3-large">Student, Developer, Engineer</p>
+
+
+      <!--About On Large Screens-->
+      <div class="column w3-content w3-justify w3-text-light-grey w3-padding-64 w3-hide-small w3-hide-medium"
+        id="about">
+        <h2 class="w3-text-light-grey w3-center">&emsp;</h2>
+
+        <h2 class="w3-text-light-grey w3-center" font-size=2vw>About Me</h2>
+        <hr style="width:200px w3-center" class="w3-opacity">
+        <p> I am a student passionate about technology and programming. My ultimate goal is to develop my skills so that I can use my knowledge
+          of technology to help people.  In my free time I enjoy engineering and playing soccer. </p>
+      </div>
+      <div class="column w3-content w3-justify w3-text-light-grey w3-padding-64 w3-hide-small w3-hide-medium"
+        id="about">
+        <img id="img1" src="MEPIC2.png" {min-width:100%} class="w3-image w3-round" width=100% height=100%>
+      </div>
+
+
+
+      <!--About On small screens-->
+      <div class=" w3-content w3-justify w3-text-light-grey w3-padding-64 w3-hide-large w3-hide-medium" id="about1">
+        <div class=" w3-content w3-justify w3-text-light-grey w3-padding-64 w3-hide-large w3-hide-medium">
+          <img src="MEPIC2.png" class="w3-image w3-round" width="992" height="1108">
+        </div>
+        <h2 class="w3-text-light-grey " id="about1">&emsp;</h2>
+        <h2 class="w3-text-light-grey w3-xxxlarge " id="about1">About Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p> I am a student passionate about technology and programming. My ultimate goal is to develop my skills so that I can use my knowledge
+          of technology to help people.  In my free time I enjoy engineering and playing soccer.
+        </p>
+      </div>
+      <!--About On medium screens-->
+      <div class="columntwo w3-content w3-justify w3-text-light-grey w3-padding-64 w3-hide-large w3-hide-small">
+        <h2 class="w3-text-light-grey " font-size=2vw id="about1">About Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p> I am a student passionate about technology and programming. My ultimate goal is to develop my skills so that I can use my knowledge
+          of technology to help people.  In my free time I enjoy engineering and playing soccer.
+        </p>
+      </div>
+      <div class="columntwo w3-content w3-justify w3-text-light-grey w3-padding-64 w3-hide-large w3-hide-small">
+        <img id="img1" src="MEPIC2.png" class="w3-image w3-round" width="992" height="1108">
+      </div>
+
+      <!--Characteritics/traits-->
+      <div class="w3-container" style="padding:1px 10px">
+        <h2 class="w3-text-light-grey " id="about1">&emsp;</h2>
+        <h2 class="w3-text-light-grey " id="about1">&emsp;</h2>
+        <h11 class="w3-center w3-xxxlarge"  >My Characteristics</h11>
+        <h2 class="w3-text-light-grey " id="about1">&emsp;</h2>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+          <div class="w3-quarter ">
+            <i class="	fa fa-cogs w3-margin-bottom w3-jumbo w3-center"></i>
+            <p class="w3-large">Hard Working</p>
+            <p>I will not give up until the job is finished to perfection.</p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fa fa-handshake-o w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Loyal</p>
+            <p>When I commit to something, I will not give it up, and I will hold to my word.</p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fa fa-cloud w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Innovative</p>
+            <p>I am able to come up with creative, innovative ideas in order to solve problems.</p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fa fa-hourglass-3 w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Efficient</p>
+            <p>I make sure that projects are done on time as scheduled.</p>
+          </div>
+        </div>
+        <div class=" w3-container"  >
+          <p class="w3-center">&emsp;</p>
+          <p class="w3-center">&emsp;</p>
+          <h2 class="w3-text-light-grey " id="about1">&emsp;</h2>
+          <p class="w3-center w3-xxxlarge"id="mywork">My Recnent Work</p>
+          <p class="w3-center">&emsp;</p>
+      </div>
+     
+      <!--My Work-->
+
+      <div class="  w3-container" style="padding:0px 16px" >
+        <h3 class="w3-center w3-xxlarge">Shipping Container Project</h3>
+        <p class="w3-center w3-text-light-grey"id="mywork">(Click to See Specifics)</p>
+        <p class="w3-center">&emsp;</p>
+        <p class="w3-center w3-large"></p>
+      
+        <div class="  w3-section w3-row-padding w3-content w3-display-container" style="margin-top:64px">
+            <img id="img2" src="Shipping 1.png" style="width:100%" onclick="onClick(this)" class="mySlides" class=" myw3-hover-opacity" alt="Shipping Container Home (SketchUp)">
+            <img id="img2" src="View 2 Home.png" style="width:100%" onclick="onClick(this)" class="mySlides" class=" w3-hover-opacity" alt="Shipping Container Home (SketchUp)">
+            <img id="img2" src="Restroom.png" style="width:100%" onclick="onClick(this)"  class="mySlides" class=" w3-hover-opacity" alt="Shipping Container Home Restromm (SketchUp)">
+            <img id="img2" src="Living Room.png" style="width:100%" onclick="onClick(this)"  class="mySlides" class=" w3-hover-opacity" alt="Shipping COntainer Home Living Room (SketchUp)">
+
+          <button   class="w3-white w3-button  w3-display-topleft" onclick="plusDivs(-1)">&#10094;</button>
+          <button  class="w3-white w3-button w3-display-topright" onclick="plusDivs(1)">&#10095;</button>
+          <div class="w3- w3-center w3-display-bottommiddle" style="width:100%"></div>
+          <span class="w3-badge w3-hide-large w3-hide-small w3-hide-medium demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge w3-hide-large w3-hide-small w3-hide-medium demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge w3-hide-large  w3-hide-small w3-hide-medium demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge w3-hide-large w3-hide-small w3-hide-medium demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+    <div><p class="w3-center w3-small">&emsp;</p><h9 class="w3-center t" style="font-size:1.85vw;">For this project I was given two shipping containers to design.  I engineered a futuristic, glass home that overlooks the water. For the designing process I used SketchUp.
+      This allowed me to build a realistic model with the help of technology.  I am currently building the house using styrofoam.  I will continue to update this site with my progress.  If you would like
+    to see high quality renders of this project you can download them below.  </h9></div><p class="w3-center">&emsp;</p><p class="w3-center">&emsp;</p><a
+     href="https://drive.google.com/drive/folders/1JgylxUNWImjSj5Walm9X9pE_sLzWpWtD" class = "fa fa-download w3-center w3-xlarge" target="_blank"  > Download Project</a><p class="w3-center">&emsp;</p><p class="w3-center">&emsp;</p><p class="w3-center">&emsp;</p>
+    
+        </div>
+        
+      
+        </div>
+        
+
+
+      <div class=" w3- w3-container" style="padding:0px 16px" >
+        <h3 class="w3-center w3-xxlarge ">Mitsubishi 4G63 Assembly</h3>
+        <p class="w3-center w3-text-light-grey"id="mywork">(Click to See Specifics)</p>
+        <p class="w3-center w3-large"></p>
+      
+        <div class="  w3-section w3-row-padding w3-content w3-display-container" style="margin-top:64px">
+          <img id="img2" src="Exp.PistonRod.bmp" style="width:100%" onclick="onClick2(this)"  class="mySlides2" class=" w3-hover-opacity" alt="4G63 Mitsubishi Piston Rod Assembly (Autodesk Inventor)">
+          <img id="img2" src="4g63 Mistubishi Piston Connecting Rod Assembly.jpg" style="width:100%" onclick="onClick2(this)"  class="mySlides2" class=" w3-hover-opacity" alt="Mitsubishi Piston Rod Assembly IDW (Autodesk Inventor)">
+          <img id="img2" src="High Quality Connecting Rod.bmp" style="width:100%" onclick="onClick2(this)" class="mySlides2" class=" w3-hover-opacity" alt="Mitsubishi Connecting Rod (Autodesk Inventor)">
+          <img id="img2" src="Blueprint Connecting Rod.PNG" style="width:100%" onclick="onClick2(this)" class="mySlides2" class=" myw3-hover-opacity" alt="Mitsubishi Connecting Rod IDW (Autodesk Inventor)">
+
+            
+
+          <button   class="w3-white w3-button w3-display-topleft" onclick="plusDivs2(-1)">&#10094;</button>
+          <button  class="w3-white w3-button w3-display-topright" onclick="plusDivs2(1)">&#10095;</button>
+          <div class=" w3-center w3-display-bottommiddle" style="width:100%"></div>
+          <div><p class="w3-center w3-small">&emsp;</p><h9 class="w3-center t" style="font-size:1.85vw;">For this project I reverse engineered the Mitsubishi 4G63 Piston and Connecting Rod using Autodesk Inventor.
+            The first thing I did was get to scale measurments with dial calipers.  After doing that we took a picture of the parts and imported them into Autodesk Inventor.  From there I was able 
+            to finish the design.  This project was a great sucsess, and if you would like to see the renders, you can download them below.  
+            
+          </h9><p class="w3-center">&emsp;</p><p class="w3-center">&emsp;</p></div><a 
+          class = "fa fa-download w3-center w3-xlarge" target="_blank" href ="https://drive.google.com/drive/folders/1VkIy55mBadVbuPSWiuy-Mrrwx5bODTgf" download="ME%20pic.PNG" 
+            > Download Project</a>
+        </div>
+        
+        <!-- * MAKE A DOWNLOAD LINK FOR ALL OTHER MEDIA***-->
+          
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+        <div class=" w3-content w3-text-white" padding="64px" id="contact">
+          <h2 class="w3-text-light-grey w3-center w3-xxlarge">Contact Me</h2>
+          <hr style="width:100px w3-ceneter" class="w3-opacity">
+      
+          <div class=" w3-center w3-xlarge">
+            <p><i class="w3-center fa fa-map-marker fa-fw w3-text-white w3-xxlarge "></i> Ohio, US</p>
+            <p><i class="w3-center fa fa-phone fa-fw w3-text-white w3-xxlarge "></i> Phone: (614)-981-5226</p>
+            <p><i class="w3-center fa fa-envelope fa-fw w3-text-white w3-xxlarge "> </i> Email: simon43017@gmail.com</p>
+            <p>Let's get in touch. Send me a message!</p> </div>
+            <a 
+          class = "fa fa-download w3-center w3-xlarge" target="_blank" href ="https://drive.google.com/drive/folders/1-Yu3_pqinX3kqflOJ27wQvgdxuz30zzm" download="ME%20pic.PNG" 
+            > Download Resume</a>
+            <p class="w3-center">&emsp;</p>
+            <p class="w3-center">&emsp;</p>
+            <p class="w3-center">&emsp;</p>
+            <p class="w3-center">&emsp;</p>
+            <p class="w3-center">&emsp;</p>
+          </div>
+          
+      </div>
+      
+      
+      <!-- Modal for full size images on click-->
+      <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+      </div>
+
+      
+  </div>
+  <script>
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  function onClick2(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+var slideIndex = 1;
+showDivs2(slideIndex);
+
+function plusDivs2(n) {
+  showDivs2(slideIndex += n);
+}
+function currentDiv2(n) {
+  showDivs2(slideIndex = n);
+}
+function showDivs2(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+</script>
+
+  
